@@ -1,4 +1,13 @@
+var map;
+
 function initMap() {
+	map= new google.maps.Map(document.getElementById('map')),{
+		center:{
+			lat:-34.397,
+			lng: 150.644
+		},
+		zoom: 8
+	});
 	var corporate = {
 		info: '<strong>Premier Transportation Corporate</strong><br>\
 					323 Cash Memorial Blvd., Forest Park, GA 30297<br>\
