@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en" class="no-js"><head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Premier Transportation | History</title>
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap-->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+ <!-- CSS Reset -->						
+  <link rel="stylesheet" href="css/reset.css"> 
+<!-- Resource style-->
+	<link rel="stylesheet" href="css/style1.css"> 
+<style>
+	body { background: #fff; }
+
+img { border: 0; max-width: 100%; }
+
+.page-header h1 {
+  font-size: 3.26em;
+  text-align: center;
+  color: #00205B;
+  text-shadow: 1px 1px 0 #A6192E;
+}
+
+/** timeline box structure **/
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.tldate {
+  display: block;
+  width: 200px;
+  background: #414141;
+  border: 3px solid #212121;
+  color: #ededed;
+  margin: 0 auto;
+  padding: 3px 0;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
+}
+
+.timeline li {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+.timeline li:after {
+  clear: both;
+}
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+
+/** timeline panels **/
+.timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  padding: 20px;
+  position: relative;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+/** panel arrows **/
+.timeline li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline li .timeline-panel.noarrow:before, .timeline li .timeline-panel.noarrow:after {
+  top:0;
+  right:0;
+  display: none;
+  border: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+
+/** timeline circle icons **/
+.timeline li .tl-circ {
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  text-align: center;
+  background: #6a8db3;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-left: -16px;
+  border: 3px solid #90acc7;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  z-index: 99999;
+}
+
+
+/** timeline content **/
+
+.tl-heading h4 {
+  margin: 0;
+  color: #c25b4e;
+}
+
+.tl-body p, .tl-body ul {
+  margin-bottom: 0;
+}
+
+.tl-body > p + p {
+  margin-top: 5px;
+}
+
+/** media queries **/
+@media (max-width: 991px) {
+  .timeline li .timeline-panel {
+    width: 44%;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-header h1 { font-size: 1.8em; }
+  
+  ul.timeline:before {
+    left: 40px;
+  }
+  
+  .tldate { width: 140px; }
+
+  ul.timeline li .timeline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+
+  ul.timeline li .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+
+  }
+  ul.timeline > li > .tldate {
+    margin: 0;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+}
+	</style>
+  
+</head>
+  	
+<body>
+	 <!-- Navbar -->
+  <div class="container">
+  <nav class="navbar fixed-top scrolling-navbar navbar-expand-lg navbar-dark">
+      <!-- Brand -->
+     <a class="navbar-brand mr-auto" href="index1.html">
+      <img class="navbar-brand" src="file:///C:/Users/Althea/Desktop/Test%20Img/Premier-logo-color-no-bkg.png" alt="Premier Transportation">
+      </a> &nbsp; &nbsp; &nbsp; &nbsp;
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-link" href="index1.html"><strong><span style="font-size:20px;">Home</span></strong>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">About Us</span></strong></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="about.html">History</a>
+                <a  class="dropdown-item" href="locations.html">Locations</a>
+                <a  class="dropdown-item" href="advantage.html">Premier Advantage</a>
+                 <a class="dropdown-item"  href="">Our Team</a>
+        </div>
+            </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">Services</span></strong></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="">Cross Dock</a>
+                <a  class="dropdown-item" href="">Logistics</a>
+                <a  class="dropdown-item" href="">Truckload</a>
+                 <a class="dropdown-item"  href="">Yard Management</a>
+        </div>
+            </li>
+      <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">Careers</span></strong></a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="http://premiertransportation.com/Careers/Openings/OpeningsS.html">Mechanic/Technician</a>
+               <a class="dropdown-item" href="http://premiertransportation.com/Careers/Openings/OpeningsO.htm">Office</a>
+                 <a class="dropdown-item"  href="http://premiertransportation.com/Careers/Openings/OpeningsW.html">Logistics</a>
+          <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/elite.html">Elite Fleet</a>
+                <a  class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/regional.html">Regional/OTR</a>
+                <a  class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/local.html">Local</a>
+                 <a class="dropdown-item"  href="http://premiertransportation.com/Careers/Driver/yard.html">Yard Driver</a>
+              </div>
+      </li>
+        <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">Drivers</span></strong></a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/elite.html">Elite Fleet</a>
+                <a  class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/regional.html">Regional/OTR</a>
+                <a  class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/local.html">Local</a>
+                 <a class="dropdown-item"  href="http://premiertransportation.com/Careers/Driver/yard.html">Yard Driver</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="http://premiertransportation.com/Careers/Openings/OpeningsS.html">Mechanic/Technician</a>
+               <a class="dropdown-item" href="http://premiertransportation.com/Careers/Openings/OpeningsO.htm">Office</a>
+                 <a class="dropdown-item"  href="http://premiertransportation.com/Careers/Openings/OpeningsW.html">Logistics</a>
+              </div>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" href=""><strong><span style="font-size:20px;">Contact Us</span></strong></a>
+                        </li>
+      <li class="nav-item">
+                            <a class="nav-link" href=""><strong><span style="font-size:20px;">News</span></strong></a>
+                        </li>
+        </ul>
+
+
+        <!-- Right -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a href="" class="nav-link" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="mailto:corp.info@premiertransportation.com" class="nav-link waves-effect"
+              target="_blank">
+              <i class="fa fa-envelope mr-2"></i>
+            </a>
+          </li>
+      <p class="navbar-text"><i class="fa fa-phone">&nbsp;<strong>800.927.6460</strong></i></p>
+        </ul>
+
+      </div>
+</div>
+</nav>
+    </div>
+    
+  <!--End Nav Bar-->
+   <hr class="my-5">
+   
+      <section>
+  <div class="timeline">
+	 <div class="carousel-item active">
+	 	 <div class="view" style="background-image: url(file:///C:/Users/Althea/Desktop/Test%20Img/t2-no.png); background-repeat: no-repeat; background-size: cover;  ">
+			 <div class="container">
+  <header class="page-header">
+    <h1 class="h1 text-center mb-5">Premier Transportation History</h1>
+  </header>
+  
+  <ul class="timeline">
+    <li><div class="tldate"><strong>2003</strong></div></li>
+    
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4 class="h4 text-center mb-5">Our Start</h4>
+        </div>
+        <div class="tl-body">
+          <p></p>
+        </div>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4></h4>
+        </div>
+        <div class="tl-body">
+          <p></p>
+            
+          <p></p>
+        </div>
+      </div>
+    </li>
+    
+    <li><div class="tldate">2004</div></li>
+    
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4></h4>
+        </div>
+        <div class="tl-body">
+          <p></p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-panel">
+        <div class="tl-heading">
+			<h4></h4>
+        </div>
+        <div class="tl-body">
+          <p></p>
+          
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4></h4>
+          
+        </div>
+        <div class="tl-body">
+          <p></p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-panel noarrow">
+        <div class="tl-heading">
+          <h4></h4>
+          
+        </div>
+        <div class="tl-body">
+          <p></p>
+        </div>
+      </div>
+    </li>
+    
+    <li><div class="tldate">2005</div></li>
+    
+    <li class="timeline-inverted">
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4></h4>
+          
+        </div>
+        <div class="tl-body">
+          <p></p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4></h4>
+          
+        </div>
+        <div class="tl-body">
+          <p></p>
+        </div>
+      </div>
+    </li>
+  </ul>
+			 </div>
+		 </div>
+	  </div>
+	</div>
+    <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+<hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fa fa-facebook mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/MDBootstrap" target="_blank">
+        <i class="fa fa-twitter mr-3"></i>
+      </a>
+
+      <a href="" target="_blank">
+        <i class="fa fa-envelope mr-3"></i>
+      </a>
+
+      
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href=> Premier Transportation </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
