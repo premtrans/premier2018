@@ -1,40 +1,39 @@
-var map;
-
 function initMap() {
+	
 	var corporate = {
-		info: '<strong>Premier Transportation Corporate</strong><br>\
-					323 Cash Memorial Blvd., Forest Park, GA 30297<br>\
-					<a href=https://goo.gl/maps/7p4HmJzuaKT2">View in Google Maps</a>',
+		info: '<strong>Premier Transportation Corporate</strong><br />
+					323 Cash Memorial Blvd., Forest Park, GA 30297<br />
+					<a href="https://goo.gl/maps/7p4HmJzuaKT2">Google Map</a>',
 		lat: 33.607902, 
 		long: -84.373024
 	};
 
 
 	var cnc = {
-		info: '<strong>Charlotte, NC</strong><br>\
-					3606 N. Graham St., <br> Charlotte, NC 28206<br>\
-					<a href="https://goo.gl/maps/RYiCHCtVzFE2">Get Directions</a>',
+		info: '<strong>Charlotte, NC</strong><br />
+					3606 N. Graham St., <br> Charlotte, NC 28206<br>
+					<a href="https://goo.gl/maps/RYiCHCtVzFE2">Google Map</a>',
 		lat: 35.265344, 
 		long: -80.814594
 		
 	};
 
 	var cma = {
-		info: '<strong>Chicopee, MA</strong><br>\r\
+		info: '<strong>Chicopee, MA</strong><br>
 					26 Taxiway Dr.,<br> Chicopee, MA 01022<br>\
 					<a href="https://goo.gl/maps/8pLGeWqG8Er">Get Directions</a>',
 		lat: 42.186341, 
 		long: -72.550657
 	};
 	var ein = {
-		info: '<strong>Evansville, IN</strong><br>\r\
+		info: '<strong>Evansville, IN</strong><br />
 					201 North Congress Ave., <br> Evansville, IN 47715<br>\
 					<a href="https://goo.gl/maps/8pLGeWqG8Er">Get Directions</a>',
 		lat: 37.979129, 
 		long: -87.498036
 	};
 	var fva = {
-		info: '<strong>Fishersville, VA/strong><br>\r\
+		info: '<strong>Fishersville, VA/strong><br />
 					249 Expo Road <br> Fishersville, VA 22939<br>\
 					<a href="https://goo.gl/maps/8pLGeWqG8Er">Get Directions</a>',
 		lat: 38.086279, 
