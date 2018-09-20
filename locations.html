@@ -23,6 +23,7 @@
 	}
 
 	</style>
+	</head>
 <body>
 	<!-- Navbar --> 
    <nav class="navbar fixed-top scrolling-navbar navbar-expand-lg navbar-dark">
@@ -32,7 +33,7 @@
        <a href="www.premiertransportation.com" class="header-logo ">
           <span class="logo-ccc"><img src="img/Premier-logo-color-no-bkg.png" alt="Premier Transportation "></span>
         </a>
-</div>
+
   <div class="container">
   
       <!-- Collapse -->
@@ -125,18 +126,21 @@
 			<p class="navbar-text"><i class="fa fa-phone">&nbsp;<strong>800.927.6460</strong></i></p>
         </ul>
 
-      </div>
-</div>
+      
 </nav>
-    </div>
+
 
   
   <!-- Navbar -->
 <div id="map"></div>
-	
-		<script src="js/script.js"></script>
 		<script async defer
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2IEXydSgB60jA2gBYc-GM3IzwhUz7bdU&callback=initMap"></script>
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2IEXydSgB60jA2gBYc-GM3IzwhUz7bdU"></script>
+	<script>
+		var map= new google.maps.Map(document.getElementById('map'),{
+			center: {lat:33.607902, lng:-84.373024},
+			zoom:8
+		});
+	</script>
 		
 
 <!--Footer-->

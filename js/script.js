@@ -1,8 +1,8 @@
 function initMap() {
 	
 	var corporate = {
-		info: '<strong>Premier Transportation Corporate</strong><br />
-					323 Cash Memorial Blvd., Forest Park, GA 30297<br />
+		info: '<strong>Premier Transportation Corporate</strong><br>\
+					323 Cash Memorial Blvd., Forest Park, GA 30297<br />\
 					<a href="https://goo.gl/maps/7p4HmJzuaKT2">Google Map</a>',
 		lat: 33.607902, 
 		long: -84.373024
