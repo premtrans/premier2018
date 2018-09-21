@@ -1,3 +1,6 @@
 Google Maps API Key
 
 AIzaSyC2IEXydSgB60jA2gBYc-GM3IzwhUz7bdU
+
+Map Embed:
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1tfF5-x-66B1luBDDqnfMlp7G2UslJP08" width="640" height="480"></iframe>
