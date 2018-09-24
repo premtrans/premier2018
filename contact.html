@@ -11,11 +11,18 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
+	<style>
+  .page-header h1 {
+  font-size: 3.26em;
+  text-align: centerr;
+  text-shadow: 1px 1px 0 #A6192E;
+}
+	</style>
 </head>
 
 <body>
 	<!-- Navbar --> 
-   <nav class="navbar fixed-top scrolling-navbar navbar-expand-lg navbar-dark">
+   <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:#00205B">
   
   
       <!-- Brand -->
@@ -37,7 +44,7 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
             <a class="nav-link" href="index.html"><strong><span style="font-size:20px;">Home</span></strong>
-              <span class="sr-only">(current)</span>
+              
             </a>
           <li class="nav-item dropdown">
 			  <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">About Us</span></strong></a>
@@ -114,13 +121,16 @@
         </ul>
 </nav>
 	<br />
-	<hr class="my-5">
+
   <!-- Navbar -->
 	<!-- Section: Contact v.2 -->
+	
 <section class="my-5">
 
   <!-- Section heading -->
-  <h2 class="h1-responsive font-weight-bold text-center my-5"><span style="color:#00205B">Contact Us</span></h2>
+	<header class="page-header">
+  <h1 class="h1 text-center mb-5"><span style="color:#00205B">Need To Contact Us?</span></h1>
+	</header>
   <!-- Section description -->
   <p class="text-center w-responsive mx-auto mb-5"></p>
 
@@ -136,19 +146,19 @@
         <div class="row">
 
           <!-- Grid column -->
-          <div class="col-md-5">
+          <div class="col-md-6">
             <div class="md-form mb-0">
               <input type="text" id="contact-name" class="form-control">
-              <label for="contact-name" class="">Your name</label>
+              <label for="contact-name" class="">Name</label>
             </div>
           </div>
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-5">
+          <div class="col-md-6">
             <div class="md-form mb-0">
               <input type="text" id="contact-email" class="form-control">
-              <label for="contact-email" class="">Your email</label>
+              <label for="contact-email" class="">Email</label>
             </div>
           </div>
           <!-- Grid column -->
@@ -160,7 +170,7 @@
         <div class="row">
 
           <!-- Grid column -->
-          <div class="col-md-10">
+          <div class="col-md-12">
             <div class="md-form mb-0">
               <input type="text" id="contact-Subject" class="form-control">
               <label for="contact-Subject" class="">Subject</label>
@@ -175,10 +185,10 @@
         <div class="row">
 
           <!-- Grid column -->
-          <div class="col-md-10">
+          <div class="col-md-12">
             <div class="md-form">
               <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
-              <label for="contact-message">Your message</label>
+              <label for="contact-message">Message</label>
             </div>
           </div>
           <!-- Grid column -->
@@ -189,39 +199,89 @@
       </form>
 
       <div class="text-center text-md-left">
-        <a class="btn btn-primary btn-md">Send</a>
+        <a class="btn text-white btn-lg" style="background-color:#A6192E"><strong>Send</strong></a>
       </div>
 
     </div>
     <!-- Grid column -->
-    
+  
     <!-- Grid column -->
-    <div class="col-md-2 text-center">
-      <ul class="list-unstyled mb-0">
-        <li>
-          <i class="fa fa-map-marker fa-2x blue-text"></i>
-          <p>Forest Park, GA 30297, USA</p>
-        </li>
-        <li>
-          <i class="fa fa-phone fa-2x mt-4 blue-text"></i>
-          <p></p>
-        </li>
-        <li>
-          <i class="fa fa-envelope fa-2x mt-4 blue-text"></i>
-          <p class="mb-0">contact@example.com</p>
-        </li>
-      </ul>
-    </div>
+      <div class="col-lg-5">
+
+        <div class="card text-white mb-3" style="background-color:#00205B;" >
+          <h3 class="my-4 pb-2 text-center">Contact information</h3>
+          <ul class="text-lg-left list-unstyled ml-4">
+            <li>
+              <p><i class="fa fa-map-marker pr-2"></i>323 Cash Memorial Blvd., Forest Park, GA 30297</p>
+            </li>
+            <li>
+              <p><i class="fa fa-phone pr-2"></i></p>
+            </li>
+            <li>
+              <a><i class="fa fa-envelope pr-2"></i>corp.info@premiertransportation.com</a>
+            </li>
+          </ul>
+		
+	 
     <!-- Grid column -->
 <!-- Google map-->
-      <div id="map-container" class="rounded z-depth-1-half map-container" style="height: 400px">
-		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.8998703774705!2d-84.37521248479656!3d33.60790238072917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fc39287d822d%3A0x74d1e387c103eb8e!2sPremier+Transportation!5e0!3m2!1sen!2sus!4v1537801465372" width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-	  </div>
-      <br>
-  </div>
+	
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.899870377474!2d-84.3752124843725!3d33.60790238072908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fc39287d822d%3A0x74d1e387c103eb8e!2sPremier+Transportation!5e0!3m2!1sen!2sus!4v1537813602714" width="775" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+	 
   <!-- Grid row -->
-
+		  </div>
+	  </div>
+	</div>
 </section>
+		</div>
+	<br />
 <!-- Section: Contact v.2 -->
+	<!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <hr class="my-5">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fa fa-facebook mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/MDBootstrap" target="_blank">
+        <i class="fa fa-twitter mr-3"></i>
+      </a>
+
+      <a href="" target="_blank">
+        <i class="fa fa-envelope mr-3"></i>
+      </a>
+
+      
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href=> Premier Transportation </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
 </body>
 </html>
