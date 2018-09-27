@@ -15,26 +15,30 @@
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
   <style type="text/css">
-    @media (min-width: 800px) and (max-width: 850px) {
-            .navbar:not(.top-nav-collapse) {
-                background: #00205B!important;
-            }
-            h2{
-              font-color:#00205B;
+	    .dropdown:hover>.dropdown-menu{
+			display:block;
+		}
+       h4,p,li{
+			font-weight:bold;
+			color:#00205B;
             }
         }
   </style>
 </head>
 
 <body>
+	<!--Main Navigation-->
+	<header>
 	<!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
-
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:#00205B">
+  
+  
       <!-- Brand -->
-      <a class="navbar-brand" href="" target="_blank">
-        <strong>Premier Transportation</strong>
-      </a>
+       <a href="www.premiertransportation.com" class="header-logo ">
+          <span class="logo-ccc"><img src="img/Premier-logo-color-no-bkg.png" alt="Premier Transportation "></span>
+        </a>
+
+  <div class="container">
 
       <!-- Collapse -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -42,27 +46,27 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Links -->
+       <!-- Links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><strong><span style="font-size:20px;">Home</span></strong>
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>About Us</strong></a>
+			  <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">About Us</span></strong></a>
 			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			  <a class="dropdown-item" href="">History</a>
-                <a  class="dropdown-item" href="">Locations</a>
-                <a  class="dropdown-item" href="">Premier Advantage</a>
+			  <a class="dropdown-item" href="about.html">History</a>
+                <a  class="dropdown-item" href="locations.html">Locations</a>
+                <a  class="dropdown-item" href="advantage.html">Premier Advantage</a>
                  <a class="dropdown-item"  href="">Our Team</a>
 			  </div>
 						</li>
           <li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Services</strong></a>
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">Services</span></strong></a>
 			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 			  <a class="dropdown-item" href="">Cross Dock</a>
                 <a  class="dropdown-item" href="">Logistics</a>
@@ -71,39 +75,40 @@
 			  </div>
 						</li>
 		  <li class="nav-item dropdown">
-  						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Careers</strong></a>
+  						<a class="nav-link dropdown-toggle" href="careers/careers.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">Careers</span></strong></a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="http://premiertransportation.com/Careers/Openings/OpeningsS.html">Mechanic/Technician</a>
-               <a class="dropdown-item" href="http://premiertransportation.com/Careers/Openings/OpeningsO.htm">Office</a>
-                 <a class="dropdown-item"  href="http://premiertransportation.com/Careers/Openings/OpeningsW.html">Logistics</a>
+							<a class="dropdown-item" href="careers/mechanic.html">Mechanic/Technician</a>
+               <a class="dropdown-item" href="careers/office.html">Office</a>
+                 <a class="dropdown-item"  href="careers/logistics.html">Logistics</a>
 					<div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/elite.html">Elite Fleet</a>
-                <a  class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/regional.html">Regional/OTR</a>
-                <a  class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/local.html">Local</a>
-                 <a class="dropdown-item"  href="http://premiertransportation.com/Careers/Driver/yard.html">Yard Driver</a>
+                <!--<a class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/elite.html">Elite Fleet</a>-->
+                <a  class="dropdown-item" href="careers/driver/local.html">Local</a>
+                <a  class="dropdown-item" href="careers/driver/regional.html">Regional/OTR</a>
+                 <a class="dropdown-item"  href="careers/driver/yard.html">Yard Driver</a>
 							</div>
 			</li>
 			  <li class="nav-item dropdown">
-  						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Drivers</strong></a>
+  						<a class="nav-link dropdown-toggle" href="careers/drivers.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">Drivers</span></strong></a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/elite.html">Elite Fleet</a>
-                <a  class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/regional.html">Regional/OTR</a>
-                <a  class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/local.html">Local</a>
-                 <a class="dropdown-item"  href="http://premiertransportation.com/Careers/Driver/yard.html">Yard Driver</a>
+							<!--<a class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/elite.html">Elite Fleet</a>-->
+                <a  class="dropdown-item" href="careers/driver/local.html">Local</a>
+                <a  class="dropdown-item" href="careers/driver/regional.html">Regional/OTR</a>
+                 <a class="dropdown-item"  href="careers/driver/yard.html">Yard Driver</a>
 								<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="http://premiertransportation.com/Careers/Openings/OpeningsS.html">Mechanic/Technician</a>
-               <a class="dropdown-item" href="http://premiertransportation.com/Careers/Openings/OpeningsO.htm">Office</a>
-                 <a class="dropdown-item"  href="http://premiertransportation.com/Careers/Openings/OpeningsW.html">Logistics</a>
+							<a class="dropdown-item" href="careers/mechanic.html">Mechanic/Technician</a>
+               <a class="dropdown-item" href="careers/office.htm">Office</a>
+                 <a class="dropdown-item"  href="careers/logistics.html">Logistics</a>
 							</div>
 						</li>
           <li class="nav-item">
-              <a class="nav-link" href=""><strong>Contact Us</strong></a>
+              <a class="nav-link" href="contact.html"><strong><span style="font-size:20px;">Contact Us</span></strong></a>
                         </li>
 			<li class="nav-item">
-                            <a class="nav-link" href=""><strong>News</strong></a>
+                            <a class="nav-link" href="news.html"><strong><span style="font-size:20px;">News</span></strong></a>
                         </li>
         </ul>
-
+</div>
+</div>
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
@@ -112,7 +117,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+            <a href="" class="nav-link" target="_blank">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -125,19 +130,18 @@
 			<p class="navbar-text"><i class="fa fa-phone">&nbsp;<strong>800.927.6460</strong></i></p>
         </ul>
 
-      </div>
-
-    </div>
-  </nav>
-  <br />
-	<br />
+     
+</nav>
+   
   <!-- Navbar -->
+	</header>
 	<!--Main layout-->
-  <main>
+  <main class="mt-5 pt-5">
      <div class="container">
-       <section class="mt-5 wow fadeIn">
+       
     <!-- Main heading -->
-            <h1 class="h1 text-center mb-5"><span style="color:#012169"><strong>Premier Advantage</strong></span></h1>
+	     <div class="container-fluid">
+            <h1 class="h1 text-center mb-5 text-uppercase"><span style="color:#00205B;text-shadow: 2px 2px 0 #A6192E;"><strong>Premier Advantage</strong></span></h1>
             <!-- Main heading -->
        
       <!--Section: Main info-->
@@ -147,8 +151,8 @@
       <!--Section: Main -->
        <div class="container">
       <section>
-		  <h2 class="h2  mb-3"><strong>Fleet Management</strong></span>
-        <img class="px-3" src="file:///C:/Users/Althea/Desktop/Test%20Img/fleet.jpg" alt="Fleet" style="float:left;">
+	      <h2 class="h2  mb-3"><span style="color:#A6192E"><strong>Fleet Management</strong></span>
+        <img class="px-3" src="img/fleet.jpg" alt="Fleet" style="float:left;">
 		  </h2>
 			<p class="font-weight-bold">At Premier Transportation, technology plays a vital role in the execution and integrity of our service. We keep promises because we're equipped to deliver.</p>
 		  <p class="font-weight-bold">We invest extensive resources in the most effective and advanced technologies in dispatch, communications, satellite tracking and EDI. We also deploy a variety of security measures to protect our clients and their freight.</p>
@@ -166,24 +170,36 @@
 	<div class="container-fluid">
 		<div class="card-deck">
 	  <div class="card card-body text-black text-center">
+<<<<<<< HEAD
 		  <h3 class="card-title" style="font-size:28px; color:#A6192E;"><i class="fa fa-file" aria-hidden="true"><strong>EDI</strong></i></h3>
+=======
+		  <h3 class="card-title" style="font-size:28px; color:#A6192E;"><i class="fa fa-file" aria-hidden="true">&nbsp;<strong>EDI</strong></i></h3>
+>>>>>>> bc53a643d27067da844ed185a11b0676db380ec4
         <p class="card-text" style="font-size:20px; color:#00205B;">Innovative collaboration</p>
         <p class="card-text" style="font-size:20px; color:#00205B;">Fast, accurate, and secure exchange of business documents</p>
         <p class="card-text"><i class="fa fa-file" aria-hidden="true"></i></p>
         <p class="card-text"><i class="fa fa-file" aria-hidden="true"></i></p>
-		  </div> 		
+		  </div> 			
     <div class="card card-body  text-black text-center ">
+<<<<<<< HEAD
 		  <h3 class="card-title" style="font-size:28px; color:#A6192E;"><i class="fa fa-map-marker" aria-hidden="true"><strong>Tractor Tracking</strong></i>
+=======
+		  <h3 class="card-title"  style="font-size:28px; color:#A6192E;"><i class="fa fa-map-marker" aria-hidden="true">&nbsp;<strong>Tractor Tracking</strong></i>
+>>>>>>> bc53a643d27067da844ed185a11b0676db380ec4
 </h3>
-        <p class="card-text"  style="font-size:20px; color:#00205B;">GPS satellite tracking </i></p>
-		  <p class="card-text"  style="font-size:20px; color:#00205B;">PeopleNet & Rand McNally</i></p>
-        <p class="card-text"  style="font-size:20px; color:#00205B;">Quickly and accurately locate tractor location</i></p>
-        <p class="card-text"></i> </p>
+        <p class="card-text"  style="font-size:20px; color:#00205B;">GPS satellite tracking </p>
+		  <p class="card-text"  style="font-size:20px; color:#00205B;">PeopleNet & Rand McNally</p>
+        <p class="card-text"  style="font-size:20px; color:#00205B;">Quickly and accurately locate tractor location</p>
+        <p class="card-text"></p>
 		
       </div>
     
     <div class="card card-body text-black text-center">
+<<<<<<< HEAD
 		  <h3 class="card-title" style="font-size:28px; color:#A6192E;"><i class="fa fa-truck" aria-hidden="true">&nbsp;<strong>Trailer Tracking</strong></i></h3>
+=======
+		  <h3 class="card-title" style="font-size:28px; color:#A6192E;"><i class="fa fa-truck" aria-hidden="true">&nbsp;<strong>Trailer Tracking</strong></h3></i>
+>>>>>>> bc53a643d27067da844ed185a11b0676db380ec4
        <p class="card-text"  style="font-size:20px; color:#00205B;">SkyBitz ensures safety and visibilty of your assets</p>
 		  <p class="card-text"  style="font-size:20px; color:#00205B;">Enhanced security protection</p>
         <p class="card-text"  style="font-size:20px; color:#00205B;">Improved detection of terrorism and other malacious threats</p>
@@ -211,7 +227,7 @@
 	<div class="container-fluid">
 		<div class="card-deck text-center">
 	  <div class="card bg-light">
-       <img class="card-img-top" src="file:///C:/Users/Althea/Desktop/Test%20Img/cng.jpg" alt="Cross Dock & Pool">
+       <img class="card-img-top" src="img/cng.jpg" alt="Cross Dock & Pool">
         <div class="card-image-overlay">
 		  <h3 class="card-title"><strong>CNG Fleet & Fuel</strong></h3>
         <p class="card-text">Cost effective alternative to LTL shipments.</p>
@@ -222,7 +238,7 @@
 			</div>
     <div class="card bg-light">
        <div class="card-image-overlay">
-        <img class="card-img" src="file:///C:/Users/Althea/Desktop/Test%20Img/Smartway-logo.jpg"  alt="SmaryWay">
+        <img class="card-img" src="img/Smartway-logo.jpg"  alt="SmaryWay">
 		  <h3 class="card-title"><strong>SmartWay Transport Partner</strong></h3>
         <p class="card-text"> </p>
 		  <p class="card-text"></p>
@@ -232,7 +248,7 @@
     </div>
     <div class="card bg-light">
        <div class="card-image-overlay">
-        <img class="card-img" src="file:///C:/Users/Althea/Desktop/Test%20Img/baler.jpg" alt="Truckload">
+        <img class="card-img" src="img/baler.jpg" alt="Truckload">
 		  <h3 class="card-title"><strong>Recycling Programs</strong></h3>
        <p class="card-text"></p>
 		  <p class="card-text"></p>
@@ -242,7 +258,7 @@
     </div>
     <div class="card bg-light">
        <div class="card-image-overlay">
-        <img class="card-img-top" src="file:///C:/Users/Althea/Desktop/Test%20Img/def.jpg" alt="Truckload">
+        <img class="card-img-top" src="img/def.jpg" alt="Truckload">
 		  <h3 class="card-title"><strong>Diesel Exhaust Fluid</strong></h3>
        <p class="card-text">DEF. Diesel Exhaust fluid</p>
 		  <p class="card-text">Non-Hazardous</p>
@@ -252,6 +268,7 @@
     </div>
     </div>
   </div>
+<<<<<<< HEAD
 </section>     
 </div>
 
@@ -266,22 +283,18 @@
           <!--/Grid column-->
 
         
+=======
+	       </section>       
+</div>
+      </section>
+      
+    </div>
+>>>>>>> bc53a643d27067da844ed185a11b0676db380ec4
   </main>
   <!--Main layout-->
 
   <!--Footer-->
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-    <!--Call to action
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Download MDB
-        <i class="fa fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Start free tutorial
-        <i class="fa fa-graduation-cap ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
 
     <hr class="my-4">
 
