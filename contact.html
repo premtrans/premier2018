@@ -12,11 +12,19 @@
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
 	<style>
+		.dropdown:hover>.dropdown-menu{
+			display:block;
+		}
+       
   .page-header h1 {
   font-size: 3.26em;
   text-align: center;
-  text-shadow: 1px 1px 0 #A6192E;
+  color: #00205B;
+  text-shadow: 2px 2px 0 #A6192E;
 }
+		
+		}
+		
 	</style>
 </head>
 
@@ -43,9 +51,11 @@
 
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
             <a class="nav-link" href="index.html"><strong><span style="font-size:20px;">Home</span></strong>
-              
+              <span class="sr-only">(current)</span>
             </a>
+          </li>
           <li class="nav-item dropdown">
 			  <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">About Us</span></strong></a>
 			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -70,44 +80,37 @@
 							<a class="dropdown-item" href="careers/mechanic.html">Mechanic/Technician</a>
                <a class="dropdown-item" href="careers/office.html">Office</a>
                  <a class="dropdown-item"  href="careers/logistics.html">Logistics</a>
-					<div class="dropdown-divider"></div>
-                <!--<a class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/elite.html">Elite Fleet</a>-->
-                <a  class="dropdown-item" href="driver/local.html">Local</a>
-                <a  class="dropdown-item" href="driver/regional.html">Regional/OTR</a>
-                 <a class="dropdown-item"  href="driver/yard.html">Yard Driver</a>
+					<a class="dropdown-item" href="careers/drivers.html">Drivers</a>
 							</div>
 			</li>
 			  <li class="nav-item dropdown">
-  						<a class="nav-link dropdown-toggle" href="careers/drivers.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">Drivers</span></strong></a>
+  						<a class="nav-link dropdown-toggle" href="careers/drivers.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong><span style="font-size:20px;">Drive4Premier</span></strong></a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<!--<a class="dropdown-item" href="http://premiertransportation.com/Careers/Driver/elite.html">Elite Fleet</a>-->
-                <a  class="dropdown-item" href="driver/local.html">Local</a>
-                <a  class="dropdown-item" href="driver/regional.html">Regional/OTR</a>
-                 <a class="dropdown-item"  href="driver/yard.html">Yard Driver</a>
+                <a  class="dropdown-item" href="careers/driver/local.html">Local</a>
+                <a  class="dropdown-item" href="careers/driver/regional.html">Regional/OTR</a>
+                 <a class="dropdown-item"  href="careers/driver/yard.html">Yard Driver</a>
 								<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="careers/mechanic.html">Mechanic/Technician</a>
-               <a class="dropdown-item" href="careers/office.htm">Office</a>
-                 <a class="dropdown-item"  href="careers/logistics.html">Logistics</a>
+							
 							</div>
 						</li>
-			   <li class="nav-item active">
+          <li class="nav-item">
               <a class="nav-link" href="contact.html"><strong><span style="font-size:20px;">Contact Us</span></strong></a>
                         </li>
 			<li class="nav-item">
                             <a class="nav-link" href="news.html"><strong><span style="font-size:20px;">News</span></strong></a>
                         </li>
         </ul>
-</div>
-</div>
+
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
-            <a href="https://www.facebook.com/pages/Premier-Transportation/519599154832361" class="nav-link" target="_blank">
+            <a href="https://www.facebook.com/Premier-Transportation-519599154832361/" class="nav-link" target="_blank">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a href="https://www.linkedin.com/company/premier-transportation" class="nav-link" target="_blank">
+            <a href="" class="nav-link" target="_blank">
               <i class="fa fa-in"></i>
             </a>
           </li>
@@ -119,6 +122,9 @@
           </li>
 			<p class="navbar-text"><i class="fa fa-phone">&nbsp;<strong>800.927.6460</strong></i></p>
         </ul>
+</div>
+</div>
+     
 </nav>
 	<br />
 
@@ -129,7 +135,7 @@
 
   <!-- Section heading -->
 	<header class="page-header">
-  <h1 class="h1 text-center mb-5"><span style="color:#00205B">Need To Contact Us?</span></h1>
+  <h1 class="h1 text-center mb-5">Need To Contact Us?</h1>
 	</header>
   <!-- Section description -->
   <p class="text-center w-responsive mx-auto mb-5"></p>
