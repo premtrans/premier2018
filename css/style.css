@@ -2,8 +2,23 @@
 html,
 body,
 .view {
-  max-width:100%;	
-  height: auto; 
+  height: 100%; 
+}
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
 }
 
 /* Navbar animation */
