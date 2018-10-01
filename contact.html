@@ -22,7 +22,9 @@
   color: #00205B;
   text-shadow: 2px 2px 0 #A6192E;
 }
-		
+		.card .card-body{
+			background-color: #00205B;!important
+		}	
 		}
 		
 	</style>
@@ -137,108 +139,91 @@
 	<header class="page-header">
   <h1 class="h1 text-center mb-5">Need To Contact Us?</h1>
 	</header>
-  <!-- Section description -->
-  <p class="text-center w-responsive mx-auto mb-5"></p>
+
+      <!-- Section: Contact v.1 -->
 
   <!-- Grid row -->
   <div class="row">
 
     <!-- Grid column -->
-    <div class="col-md-6 mb-md-0 mb-5">
+    <div class="col-lg-5 mb-lg-0 mb-4">
 
-      <form>
-
-        <!-- Grid row -->
-        <div class="row">
-
-          <!-- Grid column -->
-          <div class="col-md-6">
-            <div class="md-form mb-0">
-              <input type="text" id="contact-name" class="form-control">
-              <label for="contact-name" class="">Name</label>
-            </div>
+      <!-- Form with header -->
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-body">
+          <!-- Header -->
+          <div class="form-header">
+            <h3 class="mt-2 text-center"><i class="fa fa-envelope"></i> Contact Us</h3>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-6">
-            <div class="md-form mb-0">
-              <input type="text" id="contact-email" class="form-control">
-              <label for="contact-email" class="">Email</label>
-            </div>
+          
+          <!-- Body -->
+          
+            <input type="text" id="form-name" class="form-control mb-4" placeholder="Name">
+          
+         
+           <input type="text" id="form-email" class="form-control mb-4" placeholder="Email">
+           
+            <input type="text" id="form-Subject" class="form-control mb-4" placeholder="Subject">
+            
+            <textarea type="text" id="form-text" class="form-control md-textarea mb-4" rows="3" placeholder="Message"></textarea>
+   
+          <div class="text-center">
+            <button class="btn btn-white">Submit</button>
           </div>
-          <!-- Grid column -->
-
         </div>
-        <!-- Grid row -->
+      </div>
+      <!-- Form with header -->
 
-        <!-- Grid row -->
-        <div class="row">
+    </div>
+    <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-12">
-            <div class="md-form mb-0">
-              <input type="text" id="contact-Subject" class="form-control">
-              <label for="contact-Subject" class="">Subject</label>
-            </div>
-          </div>
-          <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-lg-7">
 
+      <!-- Google map-->
+      <div id="map-container" class="rounded z-depth-1-half map-container" style="height: 400px">
+		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.899870377474!2d-84.3752124843725!3d33.60790238072908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fc39287d822d%3A0x74d1e387c103eb8e!2sPremier+Transportation!5e0!3m2!1sen!2sus!4v1537813602714" width="775" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+      <br>
+      <!-- Buttons-->
+      <div class="row text-center">
+        <div class="col-md-4">
+          <a class="btn-floating">
+            <i class="fa fa-map-marker" style="font-size:30px;color:#A6192E"></i>
+          </a>
+			<p><strong>Corporate Office</strong></p>
+          <p>323 Cash Memorial Blvd.</p>
+          <p class="mb-md-0">Forest Park, GA 30297</p>
         </div>
-        <!-- Grid row -->
-
-        <!-- Grid row -->
-        <div class="row">
-
-          <!-- Grid column -->
-          <div class="col-md-12">
-            <div class="md-form">
-              <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
-              <label for="contact-message">Message</label>
-            </div>
-          </div>
-          <!-- Grid column -->
-
+        <div class="col-md-4">
+          <a class="btn-floating">
+            <i class="fa fa-phone" style="font-size:30px;color:#A6192E"></i>
+          </a>
+          <p>800.927.6460</p>
+          <p class="mb-md-0"></p>
         </div>
-        <!-- Grid row -->
-
-      </form>
-
-      <div class="text-center text-md-left">
-        <a class="btn text-white btn-lg" style="background-color:#A6192E"><strong>Send</strong></a>
+        <div class="col-md-4">
+          <a class="btn-floating">
+            <i class="fa fa-envelope" style="font-size:30px;color:#A6192E"></i>
+          </a>
+          <p>corp.info@premiertransportation.com</p>
+          <p class="mb-0"></p>
+        </div>
       </div>
 
     </div>
     <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Contact v.1 -->
+<!-- Default form contact -->
+    <!-- Grid column -->
   
     <!-- Grid column -->
-      <div class="col-lg-5">
-
-        <div class="card text-white mb-3" style="background-color:#00205B;" >
-          <h3 class="my-4 pb-2 text-center">Contact information</h3>
-          <ul class="text-lg-left list-unstyled ml-4">
-            <li>
-              <p><i class="fa fa-map-marker pr-2"></i>323 Cash Memorial Blvd., Forest Park, GA 30297</p>
-            </li>
-            <li>
-              <p><i class="fa fa-phone pr-2"></i>800.927.6460</p>
-            </li>
-            <li>
-              <a><i class="fa fa-envelope pr-2"></i>corp.info@premiertransportation.com</a>
-            </li>
-          </ul>
-		
-	 
-    <!-- Grid column -->
-<!-- Google map-->
-	
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.899870377474!2d-84.3752124843725!3d33.60790238072908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fc39287d822d%3A0x74d1e387c103eb8e!2sPremier+Transportation!5e0!3m2!1sen!2sus!4v1537813602714" width="775" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-	 
-  <!-- Grid row -->
-		  </div>
-	  </div>
-	</div>
-</section>
+      
 	
 	<br />
 <!-- Section: Contact v.2 -->
