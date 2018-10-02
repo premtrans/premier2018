@@ -23,6 +23,36 @@
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
 }
+	  /* The hero image */
+	  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/corp.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+	font-size:35px;
+}
+	  .hero-text p{
+		  text-align:center;
+		  font-size:30px;
+		  text-shadow: 3px 3px 0 #00205B;
+		  
+	  }	  
 .heading-title {
     margin-bottom: 100px;
 }
@@ -34,6 +64,7 @@
     letter-spacing: 2px;
     font-weight: normal;
 }
+	 
 .p-top-30 {
     padding-top: 30px;
 }
@@ -147,21 +178,13 @@
            .dropdown:hover>.dropdown-menu{
 			display:block;
 		}
-       h4,p,li{
+       li{
 			font-weight:bold;
-			color:#00205B;
+			color:fff;
        
         }
-	body { background: #fff; }
+	
 
-img { border: 0; max-width: 100%; }
-
-.page-header h1 {
-  font-size: 3.26em;
-  text-align: center;
-  color: #00205B;
-  text-shadow: 2px 2px 0 #A6192E;
-}
 	  </style>
   
 </head>
@@ -264,16 +287,16 @@ img { border: 0; max-width: 100%; }
      </div>
 </div>
 </nav>
-<br />
 	
 	<!--Main --->
+	<div class="hero-image">
+  <div class="hero-text">
+    <h1 class="h1 mb-5"><span style="color:#fff; text-shadow: 3px 3px 0 #00205B;">Premier Transportation Family</span></h1>&nbsp;
+    <p>At Premier Transportation Family isn't just a Priority, it's our Culture! </p>
+  </div>
+</div>
+<br />
 	<div class="container">
-                        <header class="page-header">
-                            <h1 class="h1 text-center">Premier Family</h1>
-							 <img src="file:///C:/Users/Althea/Desktop/Test%20Img/Corp%20Pics%20-%20resized/group1-lrg.jpg" alt="team member" class="img-responsive" position="center">
-							<p class="p-top-30 half-txt"> </p>
-                        </header>
-
                         <div class="col-md-4 col-sm-4">
                             <div class="team-member">
                                 <div class="team-img">
